@@ -2,7 +2,7 @@
 
 _December 28, 2023 by [`Yang Huanhuan`](https://github.com/huanhuanonly) for `Yu Feixia`._
 
-
+[![ViewCode](https://img.shields.io/badge/View-CODE-green?style=plastic&logo=AdGuard)](main.c)
 ---
 
 ## 程序流程图如下：
