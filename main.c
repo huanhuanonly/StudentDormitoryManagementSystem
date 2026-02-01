@@ -44,7 +44,9 @@
 #include <ctype.h>
 #include <math.h>
 
-#pragma warning (disable : 4996)
+#if defined(_MSC_VER)
+#	pragma warning (disable : 4996)
+#endif
 
 // Object-oriented C language
 typedef enum bool { false = 0, true = 1 } bool;
@@ -189,7 +191,7 @@ size_t class_funcdef(vector, find, size_t start, const void* _Value)
 	return this->size;
 }
 
-void class_funcdef(vector, sort, _CoreCrtNonSecureSearchSortCompareFunction _Func)
+void class_funcdef(vector, sort, int (*_Func)(const void*, const void*))
 {
 	qsort(this->elements, this->size, this->elementSize, _Func);
 }
